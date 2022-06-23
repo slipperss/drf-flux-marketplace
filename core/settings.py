@@ -89,16 +89,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'core.wsgi.application'
 
-# DATABASES = {
-#     "default": env.db("DATABASE_URL", default="postgres:///ninerogues"),
-# }
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'flux_market_db',
         'USER': 'postgres',
-        'PASSWORD': 'hg26alksup98',
+        'PASSWORD': 'postgres',
         'HOST': 'localhost',
         'PORT': '5432',
     }
